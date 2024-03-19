@@ -3,14 +3,13 @@ window.addEventListener("load", function () {
     console.log("xxxsss", window.innerWidth)
 
 
-    var qcImgDiv = document.getElementById('player_dev');
+    var qcImgDiv = document.getElementById('qcImg');
 
 if (qcImgDiv) {
- var scriptElementVideo = document.createElement('script');
+ // var scriptElementVideo = document.createElement('script');
 
     // Đặt thuộc tính src của script element
-    scriptElementVideo.src = 'https://nexvelar.digital/dist/dev_player.js?site=9799333c-0cc6-43f7-a41f-6b96dc651b9e';
-qcImgDiv.appendChild(scriptElementVideo);
+  
     
     // var scriptElement = document.createElement('script');
     // scriptElement.async = true;
@@ -30,6 +29,7 @@ qcImgDiv.appendChild(scriptElementVideo);
 
     // Chèn đối tượng ins vào thẻ div
     qcImgDiv.appendChild(insElement);
+    
 }
     if (window.innerWidth <= 500) {
 
@@ -71,7 +71,7 @@ qcImgDiv.appendChild(scriptElementVideo);
             qcDiv.appendChild(scriptContainer);
 
         }
-
+        
     }
     //Destop
     else {
