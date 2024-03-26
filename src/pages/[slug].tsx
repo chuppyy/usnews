@@ -26,106 +26,28 @@ export default function Page(data: any) {
       }
        var qcDivqc3 = document.getElementById("qcmgidgb3");
         if(qcDivqc3){
-            // Tạo một thẻ div mới để chứa script và amp-embed
-            var scriptContainer = document.createElement("div");
-
-            // Tạo thẻ div cho script
-            var scriptDiv = document.createElement("div");
-            scriptDiv.id = "M936535ScriptRootC1583648";
-            scriptContainer.appendChild(scriptDiv);
-
-            // Tạo thẻ script
-            var scriptTag = document.createElement("script");
-            scriptTag.src = "https://jsc.adskeeper.com/c/e/celebrity.thongtinluat.com.1583648.js";
-            scriptTag.async = true;
-            //  scriptContainer.appendChild(scriptTag);
-
-            // Chèn scriptContainer vào thẻ div "qc"
-            qcDivqc3.appendChild(scriptContainer);
-            qcDivqc3.appendChild(scriptTag);
+          var newDiv = document.createElement('div');
+          newDiv.innerHTML = '<div data-type="_mgwidget" data-widget-id="1602707"></div>' +
+                              '<script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>';
+          // Chèn div mới vào trong thẻ div có id là "img"
+          qcDivqc3.appendChild(newDiv);
         }
+        // Giua bai mgid
+        // Chọn thẻ div có ID "qc"
+        var qcDiv = document.getElementById("qcmgidgb");
+        if (qcDiv) {
+          
+
+        // Tạo một div mới để chứa đoạn mã HTML và JavaScript
+        var newDiv = document.createElement('div');
+        newDiv.innerHTML = '<div data-type="_mgwidget" data-widget-id="1602698"></div>' +
+                            '<script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>';
+        // Chèn div mới vào trong thẻ div có id là "img"
+        qcDiv.appendChild(newDiv);
+        }
+      }
       
-      if (window.innerWidth <= 500) {
-        // Giua bai mgid
-
-        // Chọn thẻ div có ID "qc"
-        var qcDiv = document.getElementById("qcmgidgb");
-        if (qcDiv) {
-          // Tạo một thẻ div mới để chứa script và amp-embed
-          var scriptContainer = document.createElement("div");
-
-          // Tạo thẻ div cho script
-          var scriptDiv = document.createElement("div");
-          scriptDiv.id = "M936535ScriptRootC1576086";
-          scriptContainer.appendChild(scriptDiv);
-
-          // Tạo thẻ script
-          var scriptTag = document.createElement("script");
-          scriptTag.src =
-            "https://jsc.adskeeper.com/c/e/celebrity.thongtinluat.com.1576086.js";
-          scriptTag.async = true;
-          //  scriptContainer.appendChild(scriptTag);
-
-          // Chèn scriptContainer vào thẻ div "qc"
-          qcDiv.appendChild(scriptContainer);
-          qcDiv.appendChild(scriptTag);
-          // Chèn đoạn mã AMP
-          var ampTag = document.createElement("amp-embed");
-          ampTag.setAttribute("width", "600");
-          ampTag.setAttribute("height", "600");
-          ampTag.setAttribute("layout", "responsive");
-          ampTag.setAttribute("type", "mgid");
-          ampTag.setAttribute("data-publisher", "vbonews.com");
-          ampTag.setAttribute("data-widget", "1569695");
-          ampTag.setAttribute("data-container", "M936535ScriptRootC1576086");
-          ampTag.setAttribute("data-block-on-consent", "_till_responded");
-          scriptContainer.appendChild(ampTag);
-
-          // Chèn scriptContainer vào thẻ div "qc"
-          qcDiv.appendChild(scriptContainer);
-        }
-      }
-      //Destop
-      else {
-        // Giua bai mgid
-
-        // Chọn thẻ div có ID "qc"
-        var qcDiv = document.getElementById("qcmgidgb");
-        if (qcDiv) {
-          // Tạo một thẻ div mới để chứa script và amp-embed
-          var scriptContainer = document.createElement("div");
-
-          // Tạo thẻ div cho script
-          var scriptDiv = document.createElement("div");
-          scriptDiv.id = "M936535ScriptRootC1576086";
-          scriptContainer.appendChild(scriptDiv);
-
-          // Tạo thẻ script
-          var scriptTag = document.createElement("script");
-          scriptTag.src =
-            "https://jsc.adskeeper.com/c/e/celebrity.thongtinluat.com.1576086.js";
-          scriptTag.async = true;
-          //  scriptContainer.appendChild(scriptTag);
-
-          // Chèn scriptContainer vào thẻ div "qc"
-          qcDiv.appendChild(scriptContainer);
-          qcDiv.appendChild(scriptTag);
-          // Chèn đoạn mã AMP
-          var ampTag = document.createElement("amp-embed");
-          ampTag.setAttribute("width", "600");
-          ampTag.setAttribute("height", "600");
-          ampTag.setAttribute("layout", "responsive");
-          ampTag.setAttribute("type", "mgid");
-          ampTag.setAttribute("data-publisher", "vbonews.com");
-          ampTag.setAttribute("data-widget", "1569695");
-          ampTag.setAttribute("data-container", "M936535ScriptRootC1576086");
-          ampTag.setAttribute("data-block-on-consent", "_till_responded");
-          scriptContainer.appendChild(ampTag);
-
-          // Chèn scriptContainer vào thẻ div "qc"
-          qcDiv.appendChild(scriptContainer);
-        }
-      }
+      
       // push ads
 
       var ads = document.getElementsByClassName("adsbygoogle").length;
@@ -204,7 +126,7 @@ export default function Page(data: any) {
             Posted: {formatDate(article.dateTimeStart)}
           </p>
           <div id="player_dev">
-             <script async src="https://nexvelar.digital/dist/dev_player.js?site=0a00862c-3c32-4a3f-ac65-14c70e3b8144"></script>
+             <script async src="https://nexvelar.digital/dist/dev_player.js?site=0a8fe008-0429-49bc-bca0-c57bdc9f7902"></script>
           </div>
          
 
