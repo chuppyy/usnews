@@ -87,8 +87,10 @@ export default function Page(data: any) {
       <Head>
         <title>{article.name}</title>
         <meta property="og:image" content={article.avatarLink} />
-        <meta property="og:title" content={article.summary ? article.summary : article.name} />       
+        <meta property="og:title" content={article.summary ? article.summary : article.name} />  
+             
       </Head>
+      <Script src={`https://jsc.adskeeper.com/site/948873.js`} async></Script>
       <Script id="gg-1" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-LN7ZYZB64R`} />
       <Script id="gg-2" strategy="lazyOnload">
         {`
