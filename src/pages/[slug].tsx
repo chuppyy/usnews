@@ -142,8 +142,14 @@ export default function Page(data: any) {
       
         <div data-type="_mgwidget" data-widget-id="1602334">
         </div>
-        <script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");
-        </script>
+        <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})
+            (window,"_mgq");
+          `,
+        }}
+      />
 
         
       </main>
