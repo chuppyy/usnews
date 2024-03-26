@@ -17,7 +17,7 @@ export default function Page(data: any) {
         insElement.className = "adsbygoogle";
         insElement.style.display = "block";
         insElement.setAttribute("data-ad-client", "ca-pub-3619133031508264");
-        insElement.setAttribute("data-ad-slot", "9137554578");
+        insElement.setAttribute("data-ad-slot", "6367062174");
         insElement.setAttribute("data-ad-format", "auto");
         insElement.setAttribute("data-full-width-responsive", "true");
 
@@ -89,13 +89,13 @@ export default function Page(data: any) {
         <meta property="og:image" content={article.avatarLink} />
         <meta property="og:title" content={article.summary ? article.summary : article.name} />       
       </Head>
-      <Script id="gg-1" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-TQVVKFRWFL`} />
+      <Script id="gg-1" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-LN7ZYZB64R`} />
       <Script id="gg-2" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-TQVVKFRWFL');
+          gtag('config', 'G-LN7ZYZB64R');
         `}
       </Script>
 
@@ -111,7 +111,7 @@ export default function Page(data: any) {
       className="adsbygoogle"    
      style={{ display: 'block' }}
      data-ad-client="ca-pub-3619133031508264"
-     data-ad-slot="1236418798"
+     data-ad-slot="2451867898"
      data-ad-format="auto"
      data-full-width-responsive="true"
     />    
