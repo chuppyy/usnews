@@ -44,9 +44,7 @@ export default function Page(data: any) {
                             '<script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>';
         // Chèn div mới vào trong thẻ div có id là "img"
         qcDiv.appendChild(newDiv);
-        }
-      }
-      
+        }         
       
       // push ads
 
