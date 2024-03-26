@@ -8,6 +8,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <script src="https://jsc.adskeeper.com/site/948873.js" async></script>
       </Head>
 
       <Layout>
