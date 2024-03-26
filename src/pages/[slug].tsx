@@ -149,7 +149,7 @@ export default function Page(data: any) {
             (window,"_mgq");
           `,
         }}
-      />
+        async ></script>
 
         
       </main>
