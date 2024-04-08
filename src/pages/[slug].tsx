@@ -139,19 +139,8 @@ export default function Page(data: any) {
             />
           </Suspense>
         </div>
-        {/*<div id="M936535ScriptRootC1576089"></div>*/}
-        {/*<script src="https://jsc.adskeeper.com/c/e/celebrity.thongtinluat.com.1576089.js"  async ></script>*/}
-      
-        <div data-type="_mgwidget" data-widget-id="1602334">
-        </div>
-        <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})
-            (window,"_mgq");
-          `,
-        }}
-        async ></script>
+        <div id="M948873ScriptRootC1602334"></div>
+        <script src="https://jsc.adskeeper.com/u/s/usnews.thongtinluat.com.1602334.js"  async ></script>    
 
         
       </main>
