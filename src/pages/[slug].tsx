@@ -26,24 +26,48 @@ export default function Page(data: any) {
       }
        var qcDivqc3 = document.getElementById("qcmgidgb3");
         if(qcDivqc3){
-          var newDiv = document.createElement('div');
-          newDiv.innerHTML = '<div data-type="_mgwidget" data-widget-id="1602707"></div>' +
-                              '<script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>';
-          // Chèn div mới vào trong thẻ div có id là "img"
-          qcDivqc3.appendChild(newDiv);
+            // Tạo một thẻ div mới để chứa script và amp-embed
+            var scriptContainer = document.createElement("div");
+
+            // Tạo thẻ div cho script
+            var scriptDiv = document.createElement("div");
+            scriptDiv.id = "M948873ScriptRootC1602707";
+            scriptContainer.appendChild(scriptDiv);
+
+            // Tạo thẻ script
+            var scriptTag = document.createElement("script");
+            scriptTag.src = "https://jsc.adskeeper.com/u/s/usnews.thongtinluat.com.1602707.js";
+            scriptTag.async = true;
+            //  scriptContainer.appendChild(scriptTag);
+
+            // Chèn scriptContainer vào thẻ div "qc"
+            qcDivqc3.appendChild(scriptContainer);
+            qcDivqc3.appendChild(scriptTag);
         }
+      
         // Giua bai mgid
         // Chọn thẻ div có ID "qc"
         var qcDiv = document.getElementById("qcmgidgb");
         if (qcDiv) {
-          
+ // Tạo một thẻ div mới để chứa script và amp-embed
+          var scriptContainer = document.createElement("div");
 
-        // Tạo một div mới để chứa đoạn mã HTML và JavaScript
-        var newDiv = document.createElement('div');
-        newDiv.innerHTML = '<div data-type="_mgwidget" data-widget-id="1602698"></div>' +
-                            '<script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>';
-        // Chèn div mới vào trong thẻ div có id là "img"
-        qcDiv.appendChild(newDiv);
+          // Tạo thẻ div cho script
+          var scriptDiv = document.createElement("div");
+          scriptDiv.id = "M948873ScriptRootC1602698";
+          scriptContainer.appendChild(scriptDiv);
+
+          // Tạo thẻ script
+          var scriptTag = document.createElement("script");
+          scriptTag.src =
+            "https://jsc.adskeeper.com/u/s/usnews.thongtinluat.com.1602698.js";
+          scriptTag.async = true;
+          //  scriptContainer.appendChild(scriptTag);
+
+          // Chèn scriptContainer vào thẻ div "qc"
+          qcDiv.appendChild(scriptContainer);
+          qcDiv.appendChild(scriptTag); 
+
         }         
       
       // push ads
