@@ -163,9 +163,17 @@ export default function Page(data: any) {
             />
           </Suspense>
         </div>
-        <div id="M948873ScriptRootC1602334"></div>
-        <script src="https://jsc.adskeeper.com/u/s/usnews.thongtinluat.com.1602334.js"  async ></script>    
-
+      
+        <div data-type="_mgwidget" data-widget-id="1607513">
+        </div>
+        <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})
+            (window,"_mgq");
+          `,
+        }}
+        async ></script>
         
       </main>
     </>
