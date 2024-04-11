@@ -25,49 +25,25 @@ export default function Page(data: any) {
       }
        var qcDivqc3 = document.getElementById("qcmgidgb3");
         if(qcDivqc3){
-            // Tạo một thẻ div mới để chứa script và amp-embed
-            var scriptContainer = document.createElement("div");
-
-            // Tạo thẻ div cho script
-            var scriptDiv = document.createElement("div");
-            scriptDiv.id = "M948873ScriptRootC1602707";
-            scriptContainer.appendChild(scriptDiv);
-
-            // Tạo thẻ script
-            var scriptTag = document.createElement("script");
-            scriptTag.src = "https://jsc.adskeeper.com/u/s/usnews.thongtinluat.com.1602707.js";
-            scriptTag.async = true;
-            //  scriptContainer.appendChild(scriptTag);
-
-            // Chèn scriptContainer vào thẻ div "qc"
-            qcDivqc3.appendChild(scriptContainer);
-            qcDivqc3.appendChild(scriptTag);
+          var newDiv = document.createElement('div');
+          newDiv.innerHTML = '<div data-type="_mgwidget" data-widget-id="1608574"></div>' +
+                              '<script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>';
+          // Chèn div mới vào trong thẻ div có id là "img"
+          qcDivqc3.appendChild(newDiv);
         }
-      
         // Giua bai mgid
         // Chọn thẻ div có ID "qc"
         var qcDiv = document.getElementById("qcmgidgb");
-        if (qcDiv) {
- // Tạo một thẻ div mới để chứa script và amp-embed
-          var scriptContainer = document.createElement("div");
+        if (qcDiv) {          
 
-          // Tạo thẻ div cho script
-          var scriptDiv = document.createElement("div");
-          scriptDiv.id = "M948873ScriptRootC1602698";
-          scriptContainer.appendChild(scriptDiv);
-
-          // Tạo thẻ script
-          var scriptTag = document.createElement("script");
-          scriptTag.src =
-            "https://jsc.adskeeper.com/u/s/usnews.thongtinluat.com.1602698.js";
-          scriptTag.async = true;
-          //  scriptContainer.appendChild(scriptTag);
-
-          // Chèn scriptContainer vào thẻ div "qc"
-          qcDiv.appendChild(scriptContainer);
-          qcDiv.appendChild(scriptTag); 
-
+        // Tạo một div mới để chứa đoạn mã HTML và JavaScript
+        var newDiv = document.createElement('div');
+        newDiv.innerHTML = '<div data-type="_mgwidget" data-widget-id="1608573"></div>' +
+                            '<script>(function(w,q){w[q]=w[q]||[];w[q].push(["_mgc.load"])})(window,"_mgq");</script>';
+        // Chèn div mới vào trong thẻ div có id là "img"
+        qcDiv.appendChild(newDiv);
         }         
+           
       
       // push ads
 
@@ -113,7 +89,7 @@ export default function Page(data: any) {
         <meta property="og:title" content={article.summary ? article.summary : article.name} />  
              
       </Head>
-      <Script src={`https://jsc.adskeeper.com/site/948873.js`} async></Script>
+      <Script src={`https://jsc.adskeeper.com/site/952609.js`} async></Script>
       <Script id="gg-1" strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=G-LN7ZYZB64R`} />
       <Script id="gg-2" strategy="lazyOnload">
         {`
@@ -141,10 +117,7 @@ export default function Page(data: any) {
      data-full-width-responsive="true"
     />    
      
-          <h1>{article.name}</h1>     
-          
-{/* <div id="M936535ScriptRootC1576084"></div>
-          <script src="https://jsc.adskeeper.com/c/e/celebrity.thongtinluat.com.1576084.js"   async  ></script> */}
+          <h1>{article.name}</h1>  
           <p className="mb-4 text-lg">
             Posted: {formatDate(article.dateTimeStart)}
           </p>
@@ -164,7 +137,7 @@ export default function Page(data: any) {
           </Suspense>
         </div>
       
-        <div data-type="_mgwidget" data-widget-id="1607513">
+        <div data-type="_mgwidget" data-widget-id="1608572">
         </div>
         <script
         dangerouslySetInnerHTML={{
