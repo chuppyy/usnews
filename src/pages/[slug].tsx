@@ -20,7 +20,6 @@ export default function Page(data: any) {
         insElement.setAttribute("data-ad-slot", "6367062174");
         insElement.setAttribute("data-ad-format", "auto");
         insElement.setAttribute("data-full-width-responsive", "true");
-
         // Chèn đối tượng ins vào thẻ div
         qcImgDiv.appendChild(insElement);
       }
